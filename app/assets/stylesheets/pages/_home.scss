@@ -2,6 +2,28 @@
   background: image-url('cocktails.jpg');
   background-size: cover;
   height: 300px;
+  text-align: center;
 }
 
+.home-banner h1 {
+  font-size: 80px;
+  font-weight: bold;
+  padding: 40px 0px 10px 0px;
+  color: #469AE0;
+  margin: 0px;
+}
 
+.home-banner h3 {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.home-banner .screen {
+  background: rgba(70, 154, 224, 0.5);
+  max-width: 700px;
+  padding: 5px 0px 5px 0px;
+  margin: auto;
+  margin-bottom: 30px;
+}

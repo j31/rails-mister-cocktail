@@ -1,21 +1,30 @@
 
 <div class="home-banner">
+  <h1>MANY TOO MANY</h1>
+
+
+  <div class="screen">
+    <h3>BECAUSE 1:N IS NOT ENOUGH</h3>
+  </div>
+
+
+  <%= link_to "Add Your Drink", new_cocktail_path, class: "btn btn-primary" %>
 </div>
 
 <div class="container">
 
-<h1>Cocktails</h1>
+  <h1>Cocktails</h1>
 
-<ul>
-<% @cocktails.each do |c| %>
-  <li>
-    <%= link_to c.name, cocktail_path(c.id) %>
-  </li>
-<% end %>
-</ul>
+  <ul>
+    <% @cocktails.each do |c| %>
+    <li>
+      <%= link_to c.name, cocktail_path(c.id) %>
+    </li>
+    <% end %>
+  </ul>
 
-<br><br>
+  <br><br>
 
-<%= link_to "New Cocktail", new_cocktail_path %>
+
 
 </div>
