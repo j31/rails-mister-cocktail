@@ -13,3 +13,10 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+
+.page-banner {
+  background: image-url('cocktails.jpg');
+  background-size: cover;
+  height: 100px;
+}
