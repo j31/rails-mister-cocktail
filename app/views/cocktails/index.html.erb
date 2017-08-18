@@ -1,7 +1,5 @@
-
 <div class="home-banner">
   <h1>MANY TOO MANY</h1>
-
 
   <div class="screen">
     <h3>BECAUSE 1 : N IS NEVER ENOUGH</h3>
@@ -11,19 +9,29 @@
 </div>
 
 <div class="container">
+  <div class="row">
 
-  <h1>Cocktails</h1>
-
-  <ul>
     <% @cocktails.each do |c| %>
-    <li>
-      <%= link_to c.name, cocktail_path(c.id) %>
-    </li>
+
+      <div class="col-xs-12 col-sm-4">
+
+
+
+        <div class="card">
+          <%= link_to cocktail_path(c.id), class: "card-link" do %>
+          <div class="card-description">
+            <h2><%= c.name %></h2>
+            <p>(<%= c.stars %> votes)</p>
+          </div>
+          <% end %>
+
+        </div>
+
+      </div>
+
     <% end %>
-  </ul>
 
-  <br><br>
-
-
-
+  </div>
 </div>
+
+

@@ -23,6 +23,14 @@ class CocktailsController < ApplicationController
     end
   end
 
+
+  def vote
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.stars += 1
+    p @cocktail.stars
+    redirect_to cocktail_path(@cocktail)
+  end
+
   def edit
   end
 
