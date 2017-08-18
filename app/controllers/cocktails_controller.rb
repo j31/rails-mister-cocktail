@@ -28,8 +28,7 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.find(params[:id])
     @cocktail.stars += 1
     @cocktail.save
-
-    redirect_to cocktail_path(@cocktail)
+    redirect_to cocktails_path(@cocktail)
   end
 
   def edit

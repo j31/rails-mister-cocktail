@@ -43,7 +43,7 @@
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
-  <%= f.input :ingredient_id, collection: Ingredient.all.sort_by {|x| [x.ingredient_type, x.name] } %>
+  <%= f.input :ingredient_id, collection: Ingredient.all %>
 
   <!-- grouping not working !!! -->
 <!--   , as: :grouped_select, group_method: :ingredient_type -->
