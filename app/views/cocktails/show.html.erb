@@ -29,7 +29,7 @@
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
-  <%= f.input :ingredient_id, collection: Ingredient.all  %>
+  <%= f.input :ingredient_id, collection: Ingredient.all.order(name: :asc)  %>
   <%= f.submit "Add Ingredient", class: "btn btn-dark" %>
 <% end %>
 </div>
